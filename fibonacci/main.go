@@ -26,7 +26,6 @@ func fibonacciRecursive(num int) int {
 func main() {
 	fmt.Println(fibonacciIterative(3))
 	fmt.Println(fibonacciRecursive(3))
-	return
 }
 
 // 1 1 2 3 5 8

@@ -17,8 +17,18 @@ func removeDuplicates(num []string) string {
 	}
 	return strings.Join(output, "")
 }
+
+func countDuplicates(num []string) {
+	mapNum := make(map[string]int)
+
+	for i := 0; i < len(num); i++ {
+		mapNum[num[i]]++
+	}
+	fmt.Println(mapNum)
+}
+
 func main() {
 	s := strings.Split("sajsndabdabdbajsnajdaijdbnajsbasjondajndjsanjoa", "")
 	fmt.Println(removeDuplicates(s))
-	return
+	countDuplicates(s)
 }
